@@ -31,6 +31,17 @@ namespace балд
                 q1 += rts.Length;
             }
             else
+            c Form2()
+        {
+            InitializeComponent();
+        }
+        static void bap(string[][] A, ref string[][] B)//Функция, когда B присваивается A
+        {
+            for (int i = 0; i < A.Length; i++)
+                for (int j = 0; j < A[i].Length; j++)
+                    B[i][j] = A[i][j];
+        }
+        //Функция добавления в список слов введе
             {
                 lst2.Items.Add(rts);
                 player = true;
