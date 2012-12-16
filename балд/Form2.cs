@@ -15,6 +15,27 @@ namespace балд
         {
             InitializeComponent();
         }
-       
+        static void bap(string[][] A, ref string[][] B)//Функция, когда B присваивается A
+        {
+            for (int i = 0; i < A.Length; i++)
+                for (int j = 0; j < A[i].Length; j++)
+                    B[i][j] = A[i][j];
+        }
+        //Функция добавления в список слов введенного слова, а также подсчет очков.
+        static void listadd(ref bool player, ListBox lst1, ListBox lst2, string rts, ref int q1, ref int q2)
+        {
+            if (player)
+            {
+                lst1.Items.Add(rts);
+                player = false;
+                q1 += rts.Length;
+            }
+            else
+            {
+                lst2.Items.Add(rts);
+                player = true;
+                q2 += rts.Length;
+            }
+        }
     }
 }
